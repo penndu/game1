@@ -221,7 +221,7 @@ var cnItems = {
     'Use a bonus': '使用奖励',
     'While the help sections are a great way to learn more about the mechanics of this game, it might reveal some features that are locked in the early stage of the game.': '虽然帮助可以让你了解这个游戏，但也会剧透一些你未解锁的功能',
     'Wisdom of the Ancients': '上古智慧',
-    'without ads': ' 没有广告',
+    'without ads': '没有广告',
     'World': '世界',
     'World Map': '世界地图',
     'Writing': '写作',
