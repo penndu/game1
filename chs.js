@@ -79,7 +79,7 @@ var cnItems = {
     'Holy Wars': '圣战',
     'Horseriding': '骑术',
     'However, if you wish to support it, you can still offer a gift !': '当然，如果您可以赞助本游戏，我们会非常开心并感谢您的慷慨！',
-    'Icons made by': '微信赞助请点',
+    'Icons made by': '微信赞助请点 ',
     'Idle': '无业',
     'Imperialism': '帝国主义',
     'in every city': '在所有城市',
