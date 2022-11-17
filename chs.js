@@ -178,7 +178,7 @@ var cnItems = {
     'Status': '国家',
     'Strong priority': '强优先级',
     'Support': '赞助',
-    'Support & Credits': '赞助与鸣谢',
+    'Support & Credits': '关于',
     'Tanning': '制革',
     'Theocracy': '神权政治',
     'There is nothing we can build in this city': '这座城市没有可以建造的建筑',
