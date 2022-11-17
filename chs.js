@@ -1131,7 +1131,7 @@ var cnItems = {
     'Game options': '游戏选项',
     'Game Options': '游戏选项',
     'Hide Terrain': '隐藏地形',
-    'Industrial Revolution Update': '工业革命更新',
+    'Industrial Revolution Update': '杜老师说旗下',
     'Melbourne': '墨尔本',
     'Moderate penalties for barbarians': '对野蛮人的适度惩罚',
     'No penalties for Barbarians (except ': '对野蛮人不予处罚（除',
