@@ -33996,10 +33996,6 @@
             return "click" === n && (t = !1 !== l.component.buy(20) && t), t
         }), null, null)), (l()(), su(18, 0, null, null, 0, "i", [], [[8, "className", 0]], null, null, null, null)), (l()(), _u(-1, null, [" Give 20 Kreds"])), (l()(), su(20, 0, null, null, 2, "button", [["class", "btn btn-outline-primary"]], null, [[null, "click"]], (function (l, n, e) {
             var t = !0;
-            var bigImg = document.createElement("img");
-            bigImg.src = "assets/img/weixin.png";
-            var myp = document.getElementById('myp');
-            myp.appendChild(bigImg);
             return "click" === n && (t = !1 !== l.component.buy(50) && t), t
         }), null, null)), (l()(), su(21, 0, null, null, 0, "i", [], [[8, "className", 0]], null, null, null, null)), (l()(), _u(-1, null, [" Give 50 Kreds"])), (l()(), su(23, 0, null, null, 2, "button", [["class", "btn btn-outline-warning"]], null, [[null, "click"]], (function (l, n, e) {
             var t = !0;
