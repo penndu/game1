@@ -987,7 +987,7 @@ var cnItems = {
     'Vilcabamba': '比尔卡班巴',
     'Ulundi': '乌伦迪',
     'Thebes': '底比斯',
-    'Thanks': '感谢',
+    'Thanks': '注意',
     'Teotihuacan': '特奥蒂瓦坎',
     'Tamboccocha': '坦波科查',
     'henkekalmar': '亨凯卡尔马',
