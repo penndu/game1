@@ -1,3 +1,13 @@
+/*
+
+ @name    : 锅巴汉化 - Web汉化插件
+ @author  : 麦子、JAR、小蓝、好阳光的小锅巴
+ @version : V0.6.1 - 2019-07-09
+ @website : http://www.g8hh.com
+
+*/
+
+//1.汉化杂项
 var cnItems = {
     _OTHER_: [],
 
@@ -29,7 +39,7 @@ var cnItems = {
     'Builders': '建造工人',
     'Building nothing': '没有在建造',
     'Buildings': '建筑',
-    'Buy those useless items': '游戏特点',
+    'Buy those useless items': '购买这些无用的东西',
     'Calendar': '日历',
     'Chest': '箱子',
     'Children': '子项目',
@@ -44,7 +54,7 @@ var cnItems = {
     'Colonialism': '殖民主义',
     'completly free': '完全免费',
     'Continue': '继续',
-    'Credits': '鸣谢赞助',
+    'Credits': '鸣谢',
     'Crop Rotation': '轮作',
     'Cultural Diplomacy': '文化外交',
     'Culture': '文化',
@@ -78,8 +88,8 @@ var cnItems = {
     'Here you will find answers to all of your questions about this Game.': '你可以在这里找到一些对你有帮助的提示',
     'Holy Wars': '圣战',
     'Horseriding': '骑术',
-    'However, if you wish to support it, you can still offer a gift !': '当然，如果您可以赞助本游戏，我们会非常开心并感谢您的慷慨！',
-    'Icons made by': '微信赞助请点',
+    'However, if you wish to support it, you can still offer a gift !': '当然，如果你赞助本游戏，就可以获得一份礼物！',
+    'Icons made by': '图片来源',
     'Idle': '无业',
     'Imperialism': '帝国主义',
     'in every city': '在所有城市',
@@ -178,11 +188,11 @@ var cnItems = {
     'Status': '国家',
     'Strong priority': '强优先级',
     'Support': '赞助',
-    'Support & Credits': '关于',
+    'Support & Credits': '赞助与鸣谢',
     'Tanning': '制革',
     'Theocracy': '神权政治',
     'There is nothing we can build in this city': '这座城市没有可以建造的建筑',
-    'This game is': '这个游戏是 ',
+    'This game is': '这个游戏是',
     'To': '想要',
     'Tools': '工具',
     'Total': '总计',
@@ -1023,8 +1033,8 @@ var cnItems = {
     'in cities with trade routes.': '在有贸易路线的城市。',
     'Mass Production (': '批量生产 (',
     'Amphitheatre ': '圆形剧场 ',
-    'Changelog': '相关网站',
-    'Complete Changelog': '游戏反馈页面',
+    'Changelog': '更新日志',
+    'Complete Changelog': '完整的更新日志',
     'Zoo': '动物园',
     'Tower of Pisa': '比萨斜塔',
     'Taj Mahal': '泰姬陵',
@@ -1131,7 +1141,7 @@ var cnItems = {
     'Game options': '游戏选项',
     'Game Options': '游戏选项',
     'Hide Terrain': '隐藏地形',
-    'Industrial Revolution Update': '杜老师说旗下',
+    'Industrial Revolution Update': '工业革命更新',
     'Melbourne': '墨尔本',
     'Moderate penalties for barbarians': '对野蛮人的适度惩罚',
     'No penalties for Barbarians (except ': '对野蛮人不予处罚（除',
@@ -1488,6 +1498,8 @@ var cnItems = {
     '2 for each wonder in this city': '这个城市的每种奇观都有2个',
     'Slaver can capture slave workers when they are part of a succesful attack.': '当奴隶工人成为成功攻击的一部分时，奴隶可以捕获奴隶工人。',
     'Governors are used to capture enemy cities': '总督被用来占领敌人的城市',
+
+    //原样
     "(": "(",
     "-": "-",
     "+": "+",
@@ -1506,13 +1518,13 @@ var cnItems = {
     '/': '/',
     '|': '|',
     '＆': '＆',
-    'Give 10 Kreds': '完全免费',
-    'Give 100 Kreds': '长期开放',
-    'Give 1000 Kreds': '欢迎游玩',
-    'Give 20 Kreds': '没有广告',
-    'Give 200 Kreds': '适合摸鱼',
-    'Give 50 Kreds': '服务稳定',
-    'Give 500 Kreds': '可玩性强',
+    'Give 10 Kreds': 'Give 10 Kreds',
+    'Give 100 Kreds': 'Give 100 Kreds',
+    'Give 1000 Kreds': 'Give 1000 Kreds',
+    'Give 20 Kreds': 'Give 20 Kreds',
+    'Give 200 Kreds': 'Give 200 Kreds',
+    'Give 50 Kreds': 'Give 50 Kreds',
+    'Give 500 Kreds': 'Give 500 Kreds',
     '& Shift': '& Shift',
     'ers': '',
     '': '',
@@ -1527,6 +1539,9 @@ var cnItems = {
     '': '',
 
 }
+
+
+//需处理的前缀
 var cnPrefix = {
     "(-": "(-",
     "(+": "(+",
@@ -1827,6 +1842,8 @@ var cnPrefix = {
     '': '',
     'Arabian Empire': '阿拉伯帝国',
 }
+
+//需处理的后缀
 var cnPostfix = {
     ":": "：",
     "：": "：",
@@ -2124,10 +2141,12 @@ var cnPostfix = {
     '': '',
     '': '',
 }
+
+//需排除的，正则匹配
 var cnExcludeWhole = [
-    /^x?\d+(\.\d+)?[A-Za-z%]{0,2}(\s.C)?\s*$/,
-    /^x?\d+(\.\d+)?(e[+\-]?\d+)?\s*$/,
-    /^\s*$/,
+    /^x?\d+(\.\d+)?[A-Za-z%]{0,2}(\s.C)?\s*$/, //12.34K,23.4 °C
+    /^x?\d+(\.\d+)?(e[+\-]?\d+)?\s*$/, //12.34e+4
+    /^\s*$/, //纯空格
     /^(\d+)m(\d+)s \(\+$/,
     /^\((\d+)m$/,
     /^([\d\.]+)M \/$/,
@@ -2137,15 +2156,21 @@ var cnExcludeWhole = [
     /^([\d\.]+)B \/$/,
     /^([\d\.]+)k\/([\d\.]+)M $/,
     /^([\d\.]+)M\/([\d\.]+)M $/,
-    /^\d+(\.\d+)?[A-Za-z]{0,2}.?\(?([+\-]?(\d+(\.\d+)?[A-Za-z]{0,2})?)?$/,
-    /^(\d+(\.\d+)?[A-Za-z]{0,2}\/s)?.?\(?([+\-]?\d+(\.\d+)?[A-Za-z]{0,2})?\/s\stot$/,
-    /^\d+(\.\d+)?(e[+\-]?\d+)?.?\(?([+\-]?(\d+(\.\d+)?(e[+\-]?\d+)?)?)?$/,
-    /^(\d+(\.\d+)?(e[+\-]?\d+)?\/s)?.?\(?([+\-]?(\d+(\.\d+)?(e[+\-]?\d+)?)?)?\/s\stot$/,
+    /^\d+(\.\d+)?[A-Za-z]{0,2}.?\(?([+\-]?(\d+(\.\d+)?[A-Za-z]{0,2})?)?$/, //12.34M (+34.34K
+    /^(\d+(\.\d+)?[A-Za-z]{0,2}\/s)?.?\(?([+\-]?\d+(\.\d+)?[A-Za-z]{0,2})?\/s\stot$/, //2.74M/s (112.4K/s tot
+    /^\d+(\.\d+)?(e[+\-]?\d+)?.?\(?([+\-]?(\d+(\.\d+)?(e[+\-]?\d+)?)?)?$/, //2.177e+6 (+4.01+4
+    /^(\d+(\.\d+)?(e[+\-]?\d+)?\/s)?.?\(?([+\-]?(\d+(\.\d+)?(e[+\-]?\d+)?)?)?\/s\stot$/, //2.177e+6/s (+4.01+4/s tot
 ];
 var cnExcludePostfix = [
-    /:?\s*x?\d+(\.\d+)?(e[+\-]?\d+)?\s*$/,
-    /:?\s*x?\d+(\.\d+)?[A-Za-z]{0,2}$/,
+    /:?\s*x?\d+(\.\d+)?(e[+\-]?\d+)?\s*$/, //12.34e+4
+    /:?\s*x?\d+(\.\d+)?[A-Za-z]{0,2}$/, //: 12.34K, x1.5
 ]
+
+//正则替换，带数字的固定格式句子
+//纯数字：(\d+)
+//逗号：([\d\.,]+)
+//小数点：([\d\.]+)
+//原样输出的字段：(.+)
 var cnRegReplace = new Map([
     [/^Allowed in (.+)$/, '剩余时间 $1'],
     [/^Troops have been dismissed due to lack of gold: (.+) Caravan$/, '部队因缺乏黄金而被解雇：$1商队'],
