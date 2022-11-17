@@ -15,7 +15,7 @@ var cnItems = {
     'AI attacks enabled': 'AI会进攻',
     'AI attacks enabled but rare': 'AI会偶尔进攻',
     'AI attacks more frequent': 'AI会频繁进攻',
-    'aand': '且',
+    'and provided': '并提供',
     'Auto-assign': '自动分配',
     'Available': '解锁',
     'Available for purchase': '允许购买',
