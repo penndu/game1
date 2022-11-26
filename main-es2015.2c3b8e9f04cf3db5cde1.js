@@ -18262,8 +18262,8 @@
             persistent: !1
         },
         menu_powers: {
-            name: "Powers",
-            link: "/game/powers",
+            name: "来秀进度",
+            link: "https://dusays.com/526/",
             check: (l, n) => l.isUnlocked("reincarnation") || n.rebirths > 0,
             persistent: !0
         },
